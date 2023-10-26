@@ -1,0 +1,142 @@
+
+<html>
+  <head>
+   <meta charset="utf-8">
+   <meta name="description"content="Galeria zdjęć wykonanych w Warszawskim ZOO">
+   <meta name="keywords"content="ZOO, lew, niedźwidź, tygrys, zwierzęta, ptaki, ryby,
+                                 Warszawa, warszawskie zoo, Warszawa Ratuszowa">
+   <title>Polecam kiełbase</title>
+   <style>
+   
+* {  margin: 0;
+     padding: 0;}
+
+/* ustalenie parametrów okna przeglądarki */
+     body {
+     background-color: #c7b371;
+     color: #482d00;
+     overflow: hidden;
+     }
+     
+/* ustalenie parametrów dla obszaru div zawierającego tytuł */
+     .tytuł {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 54px;
+     border: 1px solid gray;
+     text-align: center;
+     font-family: arial;
+     font-size: 40px;
+     background-color: rgb(255, 251, 187);
+     box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.37);
+     }
+     
+.copy {
+     display: block;
+     position: absolute;     
+     left: 0;     
+     top: calc(100% - 22px);     
+     font-size: 18px;
+     font-family: arial;     
+     text-align: center;
+     height: 22px;
+     width: 100%;
+     padding-top: 2px;
+     border: 1px solid gray;
+     background-color: rgb(255, 251, 187);
+     box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.37);
+     }  
+   
+       
+/* ustalenie parametrów dla znacznika div z klasą ob - wyświetlanie dużych zdjęć */
+     .ob {
+     display: block;
+     position: relative;
+     margin: 0 auto;
+     top: 50%;
+     transform: translate(0, -50%);
+     box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.37);
+     }
+     
+/* ustalenie parametrów dla obszaru div zawierającego mniatury zdjęć */
+     .małe {
+     display: block;
+     float: left;
+     width: 396px;
+     height: 500px;
+     overflow: auto;
+     border: 3px double gray;
+     margin-right: 5px;
+     background-color: rgb(255, 251, 187);
+     box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.37);
+     }
+     
+/* określenie parametrów dla obszaru div zawierającego duże zdjęcia */
+     .duże {
+     display: block;
+     float: left;
+     color: #593800;
+     width: 700px;
+     height: 500px;
+     border: 3px double gray;
+     margin-left: 5px;
+     background-color: rgb(255, 251, 187);
+     box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.37);
+     }     
+     
+/* ustalenie parametrów dla znacznika img (sposób wyświetlania mniaturek) */
+     img.mini {
+     border-radius: 18px;
+     margin-left: 2px;
+     box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.37);
+     }
+     img.mini:hover{
+     opacity : 0.5;
+     }
+     
+     .rama {
+     width: 1118px;
+     height: 506px;
+     display: block;
+     position: absolute;
+     left: calc(50% - 559px);
+     top: calc(50% - 243px);
+     }
+     
+
+
+   </style>
+  </head>
+  <body>
+
+<!-- TYTUŁ -->
+      <div class="tytuł">Moje małe ZOO</div>
+<!-- KONIEC TYTUŁU -->
+
+<div class="rama">
+
+<!-- RAMKA Z IKONAMI -->
+      <div class="małe">
+<img class="mini" src="pies1.png" onclick= scr"pies1.png';"300" height="200 alt="pies">
+<img class="mini" src="pies2.jpg" onclick="pies2.jpg';width="300" height="200"alt="pies">
+<img class="mini" src="pies3.jpg" onclick="pies3.jpg';width="300" height="200"alt="pies">
+<img class="mini" src="pies4.jpg" onclick="pies4.jpg';width="300" height="300"alt="pies">
+<img class="mini" src="pies5.png" onclick="pies5.png';width="300" height="200"alt="pies">
+<img class="mini" src="pies6.jpg" onclick="pies6.jpg';width="300" height="200"alt="pies">
+      </div>
+<!-- KONIEC RAMKI Z IKONAMI -->
+
+<!-- RAMKA Z OBRAZKIEM -->
+      <div id="duze" class="duże">
+         <img class="ob" src="zoo/016.jpg" name="obrazek">
+      </div>
+<!-- KONIEC RAMKI Z OBRAZKIEM -->
+
+</div>
+    
+    <div class="copy"> >>> &copy; M. W. 2021 r. <<< </div>
+  </body>
+</html>
